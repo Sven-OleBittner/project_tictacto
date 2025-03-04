@@ -25,7 +25,7 @@ function render() {
         for (let j = 0; j < 3; j++) {
             const cellIndex = i * 3 + j;
             const cellContent = fields[cellIndex] === null ? '' : fields[cellIndex];
-            tableHTML += `<td onclick="makeMove(${cellIndex})" style="width: 100px; height: 100px; border: 1px solid black; text-align: center; vertical-align: middle; font-size: 24px; cursor: pointer;">${cellContent}</td>`;
+            tableHTML += `<td onclick="makeMove(${cellIndex})" style="width: 100px; height: 100px; text-align: center; vertical-align: middle; font-size: 24px; cursor: pointer;">${cellContent}</td>`;
         }
         tableHTML += '</tr>';
     }
